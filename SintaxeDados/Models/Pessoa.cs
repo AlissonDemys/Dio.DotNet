@@ -18,27 +18,47 @@ namespace SintaxeDados.Models
         {
             double IMC = (Peso/(Altura*Altura));
             Console.WriteLine($"IMC:" + IMC.ToString("00.00"));
-
-            if (IMC <= 18.4)
+            switch (IMC)
             {
-                Console.WriteLine("Magreza 0");
+                case <= 18.4:
+                    Console.WriteLine("Magreza");
+                    break;
+                case >= 18.5 and <= 24.9: 
+                    Console.WriteLine("Normal");
+                    break;
+                case >= 25 and <= 29.9:
+                    Console.WriteLine("Sobrepeso");
+                    break;
+                case >= 30 and <= 39.9:
+                    Console.WriteLine("Obesidade");
+                    break;
+                case >= 40:
+                    Console.WriteLine("Obesidade Grave");
+                    break;
             }
-            if (IMC >= 18.5 && IMC <= 24.9)
-            {
-                Console.WriteLine("Normal 0");
-            } 
-            if (IMC >= 25 && IMC <= 29.9)
-            {
-                Console.WriteLine("Sobrepeso 1");
-            }
-            if (IMC >= 30 && IMC <= 39.9)
-            {
-                Console.WriteLine("Obesidade 2");
-            }
-            if (IMC >= 40)
-            {
-                Console.WriteLine("Obesidade 3");
-            }
+            #region Versão antiga
+            // Versão antiga.
+            // if (IMC <= 18.4)
+            // {
+            //     Console.WriteLine("Magreza 0");
+            // }
+            // if (IMC >= 18.5 && IMC <= 24.9)
+            // {
+            //     Console.WriteLine("Normal 0");
+            // } 
+            // if (IMC >= 25 && IMC <= 29.9)
+            // {
+            //     Console.WriteLine("Sobrepeso 1");
+            // }
+            // if (IMC >= 30 && IMC <= 39.9)
+            // {
+            //     Console.WriteLine("Obesidade 2");
+            // }
+            // if (IMC >= 40)
+            // {
+            //     Console.WriteLine("Obesidade 3");
+            // }
+            #endregion
         }
     }
 }
