@@ -45,11 +45,11 @@ namespace DesafioFundamentos.Models
         public void ListarVeiculos()
         {
             if (veiculos.Any())
-            {
-                
+            {                
+                Console.WriteLine("Os veículos estacionados são: ");                    
                 foreach (var placa in veiculos)
-                {
-                Console.WriteLine($"Os veículos estacionados são:{placa}");                    
+                {                    
+                    Console.WriteLine(placa);
                 }
             }
             else
