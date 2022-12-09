@@ -30,6 +30,7 @@ namespace DesafioBasico.Desafios
             int qt = int.Parse(Console.ReadLine());
             string[] v = new string[2];
 
+            
             for (int i = 0; i < qt; ++i)
             {
                 v = Console.ReadLine().Split(" ");
