@@ -7,3 +7,4 @@
  links de repositórios alternativos relativos ao mesmo curso em questão:
 
  - https://github.com/AlissonDemys/trilha-net-api-desafio
+ - https://gitlab.com/Alisson_demys/tech-test-payment-api
